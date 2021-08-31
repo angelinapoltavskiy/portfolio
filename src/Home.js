@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <div class="center">
-        <img class="ann" src="./photo.jpg" alt="a girl, Angelina, smiling" />
+        <img class="ann" src="./headshot.jpg" alt="a girl, Angelina, smiling" />
       </div>
 
       <div class="intro">
