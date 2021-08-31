@@ -23,8 +23,14 @@ code {
   margin-top: 40px;
 }
 
-.home {
+.home, .footer {
   margin: 30px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .contact {
@@ -33,6 +39,10 @@ code {
 
 .center {
   text-align: center;
+}
+
+.largeNav {
+  display: none;
 }
 
 .nav {

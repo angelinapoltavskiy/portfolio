@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -14,27 +14,16 @@ export default function Nav() {
       <div id="myLinks">
         <a>Home</a>
         <a>Projects</a>
-        <a>About Me</a>
-        <a>Contact Me</a>
       </div>
 
      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
      </a>
 
-      {/* <ul>
+    <div className="largeNav">
+      <ul>
         <li>
-          <Link
-            to="/profile"
-            href="./profile"
-            style={{ textDecoration: "none" }}
-          >
-            About
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/about" href="./about" style={{ textDecoration: "none" }}>
+          <Link to="/projects" href="./projects" style={{ textDecoration: "none" }}>
             Projects
           </Link>
         </li>
@@ -43,8 +32,10 @@ export default function Nav() {
             Home
           </Link>
         </li>
-      </ul> */}
+      </ul> 
+      </div>
     </nav>
+
     </div>
   );
 }
