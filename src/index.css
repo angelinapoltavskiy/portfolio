@@ -10,6 +10,9 @@ code {
     monospace;
 }
 
+.App {
+  text-align: left;
+}
 
 .ann {
   width:150px;
@@ -20,10 +23,82 @@ code {
   margin-top: 40px;
 }
 
-.intro {
+.home {
   margin: 30px;
+}
+
+.contact {
+  margin-top: 5em;
 }
 
 .center {
   text-align: center;
+}
+
+.nav {
+  background-color: #3561D8;
+  padding: 5px;
+  padding-right: 10px;
+  text-align: end;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.navbar #myLinks {
+  display: none;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.active {
+  background-color: #292b2c;
+  color: white;
+}
+
+@media (min-width: 768px) {
+
+.ann {
+  width:200px;
+  height:200px;
+
+}
+
+.App {
+  text-align: center;
+}
+
+}
+
+@media (min-width: 900px) {
+
+  .ann {
+    width:150px;
+    height:150px;
+  }
+
+  .contact {
+    margin-top: 8em;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+
 }
