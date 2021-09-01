@@ -23,7 +23,7 @@ export default function Nav() {
     <div className="largeNav">
       <ul>
         <li>
-          <Link to="/projects" href="./projects" style={{ textDecoration: "none" }}>
+          <Link to="/PorjectsPage" href="./projects" style={{ textDecoration: "none" }}>
             Projects
           </Link>
         </li>
