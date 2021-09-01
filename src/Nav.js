@@ -1,41 +1,34 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <div class="bg-primary">
-    <nav className="navbar">
-      <div class="nav">
-        <FontAwesomeIcon icon={faBars} size="3x"/>
-      </div>
+      <nav className="navbar">
+        <div class="nav">
+          <FontAwesomeIcon icon={faBars} size="3x" />
+        </div>
 
-      <div id="myLinks">
-        <a>Home</a>
-        <a>Projects</a>
-      </div>
-
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-     </a>
-
-    <div className="largeNav">
-      <ul>
-        <li>
-          <Link to="/PorjectsPage" href="./projects" style={{ textDecoration: "none" }}>
+        <div className="largeNav">
+          <Link
+            to="/PorjectsPage"
+            href="./projects"
+            style={{ textDecoration: "none" }}
+          >
             Projects
           </Link>
-        </li>
-        <li>
           <Link to="/" href="./" style={{ textDecoration: "none" }}>
             Home
           </Link>
-        </li>
-      </ul> 
-      </div>
-    </nav>
+        </div>
 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </nav>
     </div>
   );
 }
