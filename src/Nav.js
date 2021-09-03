@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 export default function Nav() {
   return (
@@ -35,8 +37,15 @@ export default function Nav() {
       </nav>
     </div>
     </div>
+
+
+
+    <Container fluid="md">
     <div className="desktopNav">
-        <div>
+      <div className="flex-row">
+      <Row>
+        <div className="links">
+          <Col>
         <Link
             to="/PorjectsPage"
             href="./projects"
@@ -45,6 +54,8 @@ export default function Nav() {
           >
             Projects
           </Link>
+          </Col>
+          <Col>
           <Link 
             to="/"
             href="./" 
@@ -52,8 +63,12 @@ export default function Nav() {
             style={{ textDecoration: "none" }}>
             Home
           </Link>
+          </Col>
+        </div>
+        </Row>
         </div>
     </div>
+    </Container>
   </section>
 
   );
