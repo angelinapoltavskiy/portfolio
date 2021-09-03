@@ -41,6 +41,7 @@ code {
   text-align: left;
 }
 
+
 .nav {
   background-color: #3561D8;
   padding: 5px;
@@ -54,7 +55,7 @@ code {
   position: relative;
 }
 
-.navbar #myLinks {
+.navElem {
   display: none;
 }
 
@@ -79,11 +80,11 @@ code {
 
 @media (min-width: 768px) {
 
-h1, h2 {
+.intro h1, h2 {
    font-size: 20px;
 }
 
-p {
+.intro p {
   font-size: 16px;
 }
 
@@ -97,6 +98,9 @@ p {
   text-align: center;
 }
 
+.mobileNav {
+  display: none;
+}
 
 }
 

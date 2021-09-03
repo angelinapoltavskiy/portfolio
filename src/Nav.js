@@ -5,31 +5,57 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <div class="bg-primary">
+    <section className="navigation">
+    <div className="mobileNav">
+    <div className="topbar">
       <nav className="navbar">
         <div class="nav">
-          <FontAwesomeIcon icon={faBars} size="3x" />
+          <a href="javascript:void(0);" onclick="myFunction()">
+            <FontAwesomeIcon icon={faBars} size="3x" />
+          </a>
         </div>
 
-        <div className="largeNav">
-          <Link
+        <div className="navElem">
+        <Link
             to="/PorjectsPage"
             href="./projects"
+            id="myLinks"
             style={{ textDecoration: "none" }}
           >
             Projects
           </Link>
-          <Link to="/" href="./" style={{ textDecoration: "none" }}>
+          <Link 
+            to="/"
+            href="./" 
+            id="myLinks"
+            style={{ textDecoration: "none" }}>
             Home
           </Link>
         </div>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-
       </nav>
     </div>
+    </div>
+    <div className="desktopNav">
+        <div>
+        <Link
+            to="/PorjectsPage"
+            href="./projects"
+            id="myLinks"
+            style={{ textDecoration: "none" }}
+          >
+            Projects
+          </Link>
+          <Link 
+            to="/"
+            href="./" 
+            id="myLinks"
+            style={{ textDecoration: "none" }}>
+            Home
+          </Link>
+        </div>
+    </div>
+  </section>
+
   );
 }
 
