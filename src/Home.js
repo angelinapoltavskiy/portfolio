@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -15,6 +16,14 @@ export default function Home() {
           Just a bit about my self, I'm an aspiring Front End Developer,
           currently in my senior year at UW studying Informatics.
         </p>
+      </div>
+
+      <div className="projectpeak">
+        <h2>Projects</h2>
+           
+          {/* add in 2 project cards here */}
+
+         <Button variant='primary' >See more of my projects</Button> 
       </div>
 
       <div className="contact">

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Col, Row, Form } from "react-bootstrap";
 
 export default function Nav() {
   return (
@@ -45,17 +45,17 @@ export default function Nav() {
       <div className="flex-row">
       <Row>
         <div className="links">
-          <Col>
+        <div className="link">
         <Link
-            to="/PorjectsPage"
+            to="/ProjectsPage"
             href="./projects"
             id="myLinks"
             style={{ textDecoration: "none" }}
           >
             Projects
           </Link>
-          </Col>
-          <Col>
+          </div>  
+          <div className="link">
           <Link 
             to="/"
             href="./" 
@@ -63,7 +63,8 @@ export default function Nav() {
             style={{ textDecoration: "none" }}>
             Home
           </Link>
-          </Col>
+          </div>
+
         </div>
         </Row>
         </div>
